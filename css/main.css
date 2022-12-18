@@ -69,6 +69,8 @@ h5 span {
   width: 100%;
   border-radius: 30px;
   background-color: #7754a0;
+  color: #ddd;
+  text-transform: uppercase;
 }
 
 .btn:hover,
@@ -76,26 +78,9 @@ h5 span {
 .btn:focus {
   height: 4rem;
   background: #ddd;
+  color: #c33764;
   width: 100%;
   border-radius: 30px;
-}
-
-.btn a {
-  color: #ddd;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.btn a:hover,
-.btn a:active,
-.btn a:focus {
-  font-family: 'Roboto';
-  color: #c33764;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 
@@ -742,14 +727,17 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2% 5%;
+  padding: 5% 2% 0 2%;
   margin: auto;
+  border-bottom: transparent;
+  border-bottom-width: 2rem;
+  border-bottom-style: inset;
 }
 
 .card:hover {
   border-bottom:  #c33764;
-  border-bottom-width: 4rem;
-  border-bottom-style: solid;
+  border-bottom-width: 2rem;
+  border-bottom-style: inset;
 }
 
 .card p {
