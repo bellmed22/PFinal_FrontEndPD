@@ -9,7 +9,7 @@
 ================================ */
 html {
   scroll-behavior: smooth;
-    font-size: calc(15px + vw);
+  font-size: calc(15px + vw);
 }
 
 body {
@@ -109,7 +109,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   height: 75vh;
-  background-color: #4c3c79;
+  background-color: #57448b;
   /*font-family: 'Montserrat', sans-serif;*/
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -162,6 +162,7 @@ header {
 .secquote p {
   font-size: 2.3rem;
   text-align: center;
+  line-height: 100;
 }
 
 .container {
@@ -505,7 +506,7 @@ blockquote p {
 }
 
 blockquote span {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 
@@ -767,7 +768,10 @@ p {
   direction: ltr;
 }
 
-
+.card img {
+  width: 50%;
+  margin: 5% 0;
+}
 
 
 /* TRABAJOS
@@ -1055,12 +1059,20 @@ figure.snip1104.hover:before {
 
 .contact-info a:hover {
   color: #c33764;
+  text-decoration: none;
 }
 
-.contact-address,
+.contact-map,
 .contact-phone,
 .contact-email {
   margin-bottom: 20px;
+}
+
+.map {
+  border-color: #c33764;
+  border-width: .8rem;
+  border-radius: 50%;
+  border-style: solid;
 }
 
 
@@ -1130,6 +1142,17 @@ body.dark {
   color: #ddd;
 }
 
+.dark .prev::before,
+.dark .prev::after,
+.dark .next::before,
+.dark .next::after {
+  background: #fff;
+}
+
+.dark .swiper-pagination-bullet {
+  background-color: #fff;
+}
+
 
 
 /* MEDIA QUERIES
@@ -1149,13 +1172,13 @@ body.dark {
 @media(max-width:768px) {
   .navbar {
     background: #2e3138;
+    border-color: #7754a0;
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem;
   }
 }
 
 @media(min-width:768px) {
-  .navbar-brand {
-    display: none;
-  }
 
   .navbar-default.affix {
     background-color: #2e3138;
@@ -1170,21 +1193,7 @@ body.dark {
     ;
   }
 
-  .navbar-default.affix:hover,
-  .navbar-default.affix:focus {
-    color: #7754a0;
-  }
 
-  .navbar-default.affix .nav>li>a,
-  .navbar-default.affix .nav>li>a:focus {
-    color: #ddd;
-    text-shadow: 1px 1px 1px #1e1e1eb3;
-  }
-
-  .navbar-default.affix .nav>li>a:hover,
-  .navbar-default.affix .nav>li>a:focus:hover {
-    color: #7754a0;
-  }
 }
 
 
