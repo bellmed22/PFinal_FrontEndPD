@@ -49,15 +49,16 @@ h4 {
 
 h5 {
   font-family: 'Arvo', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
   text-align: end;
-  letter-spacing: .5rem;
+  letter-spacing: .2rem;
+  line-height: 5.3rem;
   margin-bottom: 10%;
   margin: 15% 5% 0 0%;
 }
 
 h5 span {
-  font-family:'Poppins', serif;
   font-size: 5rem;
   font-weight:700;
   color: #328c9c;
@@ -745,6 +746,12 @@ p {
   margin: auto;
 }
 
+.card:hover {
+  border-bottom:  #c33764;
+  border-bottom-width: 4rem;
+  border-bottom-style: solid;
+}
+
 .card p {
   font-size: 1.7rem;
   font-style: oblique;
@@ -766,7 +773,7 @@ p {
 }
 
 .card img {
-  width: 50%;
+  width: 65%;
   margin: 5% 0;
 }
 
