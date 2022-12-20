@@ -33,6 +33,10 @@ h2 {
   text-align: center;
 }
 
+figcaption h2 {
+  font-family: 'Lato', sans-serif;
+}
+
 h3 {
   padding-bottom: 3%;
   font: 3rem sans-serif;
@@ -347,6 +351,7 @@ header {
 @media (max-width: 768px) {
   .mobile-nav-toggle {
     display: block;
+    
   }
 
   .navbar ul {
@@ -365,6 +370,8 @@ header {
   transition: 0.3s;
   z-index: 1100;
   color: #ddd;
+  max-height: 45vh;
+
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -514,7 +521,7 @@ blockquote span {
 /* Slider Nav
   ---------------------------------*/
 
-nav div {
+#controles div {
   position: absolute;
   bottom: 5%;
   left: 45%;
@@ -524,7 +531,7 @@ nav div {
   list-style: none;
 }
 
-nav div:last-of-type {
+#controles div:last-of-type {
   left: auto;
   right: 46%;
 }
@@ -587,7 +594,7 @@ nav div:last-of-type {
 }
 
 
-nav>div>span {
+#controles>div>span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -777,10 +784,6 @@ p {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-}
-
-figcaption h2 {
-  font-family: 'Lato', sans-serif;
 }
 
 
@@ -1077,8 +1080,9 @@ figure.snip1104.hover:before {
 /* DARK MODE TOGGLE
 ================================ */
 .dark-mode-toggle {
-  position: absolute;
+  position: fixed;
   right: 10%;
+  top: 3%;
   border: 0;
   background: transparent;
   padding: 0;
@@ -1087,6 +1091,9 @@ figure.snip1104.hover:before {
 }
 
 .dark-mode-toggle__icon {
+  position: fixed;
+  left: 10%;
+  top: 3%;
   width: 25px;
   height: auto;
   color: #f1d073;
@@ -1195,7 +1202,7 @@ body.dark {
 
 
 @media(max-width: 1240px) {
-  nav div {
+  #controles div {
     position: absolute;
     top: 50%;
     left: 4%;
@@ -1205,7 +1212,7 @@ body.dark {
     list-style: none;
   }
 
-  nav div:last-of-type {
+  #controles div:last-of-type {
     left: auto;
     right: 4%;
   }
